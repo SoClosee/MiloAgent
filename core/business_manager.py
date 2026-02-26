@@ -1,28 +1,14 @@
-"""Business (project) manager with hot-reload and CRUD operations."""
-
 import os
-import time
-import logging
-import threading
+time
+logging
+threading
 from pathlib import Path
 from typing import Dict, List, Optional, Callable
-
 import yaml
 
 logger = logging.getLogger(__name__)
 
-
 class BusinessManager:
-    """Manages project YAML files with hot-reload capability.
-
-    Features:
-    - Load all projects from projects/ directory
-    - Watch for file changes (add/edit/delete) via mtime polling
-    - CRUD operations for projects
-    - Thread-safe access to projects list
-    - Callbacks for reload notification
-    """
-
     def __init__(self, projects_dir: str = "projects/"):
         self.projects_dir = Path(projects_dir)
         self.projects_dir.mkdir(parents=True, exist_ok=True)
@@ -38,12 +24,10 @@ class BusinessManager:
 
     @property
     def projects(self) -> List[Dict]:
-        """Thread-safe access to current projects list."""
         with self._lock:
             return list(self._projects)
 
     def reload(self):
-        """Reload all projects from disk."""
         projects = []
         new_mtimes = {}
 
@@ -87,10 +71,7 @@ class BusinessManager:
             except Exception as e:
                 logger.error(f"Reload callback error: {e}")
 
-    # ── File Watcher ──────────────────────────────────────────────────
-
     def start_watching(self, interval: float = 5.0):
-        """Start file watcher thread (daemon, polls every interval seconds)."""
         if self._watching:
             return
         self._watching = True
@@ -101,11 +82,9 @@ class BusinessManager:
         logger.info(f"Project file watcher started (interval={interval}s)")
 
     def stop_watching(self):
-        """Stop file watcher thread."""
         self._watching = False
 
     def _watch_loop(self, interval: float):
-        """Poll for file changes in projects/ directory."""
         while self._watching:
             time.sleep(interval)
             try:
@@ -120,13 +99,7 @@ class BusinessManager:
                 logger.error(f"File watcher error: {e}")
 
     def on_reload(self, callback: Callable):
-        """Register a callback for when projects are reloaded.
-
-        Callback receives: callback(projects: List[Dict])
-        """
         self._on_reload_callbacks.append(callback)
-
-    # ── CRUD Operations ───────────────────────────────────────────────
 
     def add_project(
         self,
@@ -136,11 +109,6 @@ class BusinessManager:
         project_type: str = "SaaS",
         **kwargs,
     ) -> str:
-        """Create a new project YAML file.
-
-        Returns the filepath of the created file.
-        Raises ValueError if file already exists.
-        """
         slug = name.lower().replace(" ", "_").replace("-", "_")
         filepath = self.projects_dir / f"{slug}.yaml"
 
@@ -204,7 +172,6 @@ class BusinessManager:
         return str(filepath)
 
     def delete_project(self, name: str) -> bool:
-        """Delete a project by name. Returns True if found and deleted."""
         for f in self.projects_dir.glob("*.yaml"):
             try:
                 with open(f) as fh:
@@ -218,18 +185,15 @@ class BusinessManager:
         return False
 
     def get_project(self, name: str) -> Optional[Dict]:
-        """Get a project by name (case-insensitive)."""
         for p in self.projects:
             if p.get("project", {}).get("name", "").lower() == name.lower():
                 return p
         return None
 
     def list_projects(self) -> List[str]:
-        """List all project names."""
         return [p["project"]["name"] for p in self.projects]
 
     def get_project_filepath(self, name: str) -> Optional[str]:
-        """Get the YAML file path for a project."""
         for f in self.projects_dir.glob("*.yaml"):
             try:
                 with open(f) as fh:
