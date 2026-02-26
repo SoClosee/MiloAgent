@@ -2,75 +2,183 @@
   <img src="https://img.shields.io/badge/MiloAgent-v3.0-blueviolet?style=for-the-badge&logo=robot&logoColor=white" alt="MiloAgent v3.0"/>
 </p>
 
-<h1 align="center">MiloAgent</h1>
+<h1 align="center">Milo — Your AI Growth Agent</h1>
 
 <p align="center">
-  <strong>AI-Powered Social Media Growth Engine</strong><br>
-  <em>Autonomous bot that grows your product's presence on Reddit, Twitter/X & Telegram</em>
+  <strong>An autonomous AI agent that lives on Reddit, learns from every interaction, and grows your product organically.</strong><br>
+  <em>Currently expanding his skills to Twitter/X and Telegram.</em>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+"/>
   <img src="https://img.shields.io/badge/cost-$0%2Fmonth-brightgreen?style=flat-square" alt="Zero Cost"/>
   <img src="https://img.shields.io/badge/LLM-Groq%20|%20Gemini%20|%20Ollama-orange?style=flat-square" alt="LLM Providers"/>
-  <img src="https://img.shields.io/badge/platforms-Reddit%20|%20Twitter%20|%20Telegram-blue?style=flat-square" alt="Platforms"/>
+  <img src="https://img.shields.io/badge/reddit-expert-FF4500?style=flat-square&logo=reddit&logoColor=white" alt="Reddit Expert"/>
+  <img src="https://img.shields.io/badge/twitter-learning-1DA1F2?style=flat-square&logo=x&logoColor=white" alt="Twitter Learning"/>
+  <img src="https://img.shields.io/badge/telegram-learning-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram Learning"/>
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="MIT License"/>
   <img src="https://img.shields.io/badge/docker-ready-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker Ready"/>
 </p>
 
 ---
 
-## What is MiloAgent?
+## Meet Milo
 
-MiloAgent is a fully autonomous growth bot that promotes your product/project across social media by joining real conversations naturally. It scans Reddit, Twitter/X, and Telegram for relevant discussions, generates human-like comments using LLM, and posts them — all while learning from the results to get better over time.
+**Milo** is not a script. He's an AI agent.
 
-**No API costs.** Runs entirely on free-tier LLMs (Groq + Gemini).
+He reads Reddit like a human. He understands what people are asking, what tone fits each community, and when your product is genuinely the right answer. He crafts responses that sound like they come from someone who actually uses your product — because his LLM brain has memorized every feature, every FAQ, every competitor difference.
 
-### Key Features
+And he learns. Every comment he posts, every upvote or removal he gets back, feeds his learning engine. He figures out which subreddits love him, which keywords work, which tone gets engagement, and which approach gets deleted. Then he adapts.
 
-| Feature | Description |
-|---------|-------------|
-| **Multi-Platform** | Reddit (web + API), Twitter/X, Telegram groups |
-| **Smart Content** | LLM-generated comments adapted to context, subreddit culture, and post type |
-| **Self-Learning** | Learns which subreddits, tones, and post types perform best |
-| **A/B Testing** | Automatically tests tone, content type, length, and promo ratio |
-| **Multi-Account** | Rotate between accounts with independent cooldowns |
-| **Anti-Ban** | Rate limiting, human-like delays, shadowban detection, circuit breaker |
-| **3 Dashboards** | Web UI, Terminal TUI, Telegram bot — monitor from anywhere |
-| **Zero Cost** | Groq + Gemini free tiers = $0/month |
-| **Docker Ready** | One-command deployment with docker-compose |
-| **Expert Personas** | 10+ domain-expert personas that adapt to each community |
-| **Community Management** | Create and manage your own subreddits |
-| **Hot-Reload** | Edit project configs — changes apply instantly, no restart |
+**Reddit is Milo's home turf.** He knows how subreddits work — the culture, the rules, the anti-self-promotion reflex. He's built to blend in, not stand out. 80% of what he posts is purely organic and helpful. The other 20%? A natural mention of your product, only when it genuinely fits the conversation.
+
+**Twitter/X and Telegram are next.** Milo is actively learning these platforms — scanning conversations, replying to tweets, engaging in Telegram groups. Same brain, new playgrounds. These integrations are functional and improving with every cycle.
+
+### What makes Milo different
+
+| | Traditional bots | **Milo** |
+|---|---|---|
+| **Content** | Templates + spam | LLM-generated, context-aware, adapted to each community |
+| **Strategy** | Fixed rules | Self-learning: adjusts targeting, tone, timing automatically |
+| **Detection** | Gets banned fast | Expert personas, human timing, shadowban detection, circuit breakers |
+| **Platforms** | Single platform | Reddit expert + Twitter/X & Telegram support |
+| **Cost** | API fees | **$0/month** — runs on free-tier LLMs |
+| **Intelligence** | None | A/B testing, prompt evolution, sentiment analysis, subreddit intel |
 
 ---
 
-## How It Works
+## How Milo Thinks
 
 ```
-Every 8 minutes:
-  SCAN → Find relevant posts across Reddit/Twitter/Telegram
-    ↓
-  SCORE → Rank opportunities by relevance, freshness, engagement
-    ↓
-  GENERATE → Create a natural comment via LLM (80% organic / 20% promo)
-    ↓
-  VALIDATE → Check for spam patterns, links, duplicates
-    ↓
-  POST → Publish the comment with human-like timing
-    ↓
-  LEARN → Track performance, adjust strategy, improve prompts
+          ┌─────────────────────────────────────────────┐
+          │              MILO'S BRAIN                    │
+          │                                             │
+          │  LLM Engine (Groq/Gemini/Ollama)            │
+          │  10+ Expert Personas                        │
+          │  Learning Engine + A/B Testing              │
+          │  Content Validator                          │
+          └──────────────┬──────────────────────────────┘
+                         │
+           ┌─────────────┼─────────────┐
+           ▼             ▼             ▼
+    ┌──────────┐  ┌──────────┐  ┌──────────┐
+    │  REDDIT  │  │ TWITTER  │  │ TELEGRAM │
+    │  Expert  │  │ Learning │  │ Learning │
+    │          │  │          │  │          │
+    │ Scan     │  │ Scan     │  │ Join     │
+    │ Comment  │  │ Reply    │  │ groups   │
+    │ Post     │  │ Tweet    │  │ Reply    │
+    │ DM       │  │ DM       │  │ Engage   │
+    │ Engage   │  │ Like     │  │          │
+    │ Verify   │  │ Follow   │  │          │
+    │ Hub mgmt │  │          │  │          │
+    └──────────┘  └──────────┘  └──────────┘
+           │             │             │
+           └─────────────┼─────────────┘
+                         ▼
+              ┌─────────────────┐
+              │  LEARNING LOOP  │
+              │                 │
+              │ Track outcomes  │
+              │ Adjust weights  │
+              │ A/B test tones  │
+              │ Evolve prompts  │
+              │ Discover subs   │
+              └─────────────────┘
 ```
 
-### Content Types
+### Milo's cycle — every 8 minutes
 
-The bot generates two types of content in a configurable ratio:
+```
+SCAN  →  Find relevant conversations where your product fits naturally
+  ↓
+SCORE →  Rank each opportunity (relevance × freshness × engagement potential)
+  ↓
+THINK →  Pick the right persona, tone, and approach for this subreddit
+  ↓
+WRITE →  Generate a human-like response via LLM (80% helpful / 20% promo)
+  ↓
+CHECK →  Validate: no spam patterns, no duplicates, no broken links
+  ↓
+POST  →  Publish with human-like timing and random delays
+  ↓
+LEARN →  Track what happened — upvotes? replies? removed? → adjust strategy
+```
 
-**Organic (80%)** — Genuine, helpful responses with no product mention:
-> "I had the same problem — what worked for me was splitting long videos into 60s segments and posting the highlights. Took some trial and error but now my workflow is pretty smooth. What platform are you targeting first?"
+---
 
-**Promotional (20%)** — Natural product mentions in context:
-> "I've been using [YourProduct] to automate that process — the AI picks out the key moments and exports them in the right format. Saved me hours compared to manual editing. Have you tried any automated tools yet?"
+## Reddit — Milo's Expertise
+
+Reddit is where Milo shines. Here's what he can do:
+
+**Conversations** — Scans target subreddits for posts matching your keywords. Reads the post, understands the context, and writes a comment that actually helps while naturally mentioning your product when relevant.
+
+**Personas** — Milo doesn't talk the same way on r/Twitch and r/Entrepreneur. He has 10+ expert personas that adapt his tone, vocabulary, and expertise level to each community.
+
+**Organic presence** — Milo upvotes, subscribes, and participates organically. He builds karma and reputation before ever mentioning your product in a subreddit.
+
+**Seed content** — He creates his own posts: questions, tutorials, comparisons, experience reports. Content that attracts the audience you're targeting.
+
+**Subreddit management** — Milo can create, moderate, and animate your own subreddits. Auto-moderation, sticky posts, weekly content — he runs the community for you.
+
+**Verification** — After posting, Milo checks back: was the comment removed? Did it get upvotes? He penalizes subreddits that delete his content and doubles down on ones that engage.
+
+### How Milo talks
+
+**Organic comment (80%)** — No product mention, just genuine help:
+> "I had the same issue — what worked for me was cutting streams into 60-second highlights and posting the best ones. Took some trial and error but now my workflow is pretty smooth. What platform are you targeting first for your clips?"
+
+**Promotional comment (20%)** — Natural mention, only when it fits:
+> "I started using [YourProduct] to automate that exact process — the AI picks out the key moments and exports them ready for Shorts/Reels. Saved me a ton of time vs doing it manually. Have you tried any automated clipping tools yet?"
+
+The ratio, tone, and style are all learned and adjusted automatically through A/B testing.
+
+---
+
+## Twitter/X & Telegram — Learning in Progress
+
+Milo is actively expanding to these platforms with the same intelligence:
+
+### Twitter/X
+- Scans tweets and threads matching your keywords
+- Replies with context-aware responses
+- Posts original tweets and threads
+- Likes, retweets, follows strategically
+- DM outreach for relationship building
+- *Note: Twitter may block server IPs — proxy support included*
+
+### Telegram
+- Auto-discovers and joins relevant groups
+- Engages in group conversations naturally
+- Adapts persona to each group's topic
+- Supports Telethon (user account) for authentic presence
+- Controlled message frequency to avoid spam detection
+
+Both platforms feed into the same learning engine — Milo gets smarter across all channels simultaneously.
+
+---
+
+## Milo's Brain — Self-Learning System
+
+Milo doesn't just post — he evolves. Four learning systems work in parallel:
+
+### 1. Performance Weighting
+Every subreddit, keyword, and content type gets a performance score. High engagement? More attention. Getting deleted? Less activity. Milo automatically shifts his focus to where he's winning.
+
+### 2. Sentiment Analysis
+When someone replies to Milo, he analyzes the sentiment: "thanks, this helped!" vs "this looks like spam". No LLM calls — fast keyword analysis that adjusts his tone for each subreddit in real-time.
+
+### 3. A/B Testing Engine
+Milo runs up to 2 experiments simultaneously, testing:
+- **Tone** — casual vs professional vs enthusiastic
+- **Post type** — question vs tutorial vs comparison vs experience
+- **Length** — short punchy vs detailed long-form
+- **Promo ratio** — finding the sweet spot between helpful and promotional
+
+Each experiment runs for a minimum number of samples, then Milo picks the winner and moves on to the next test.
+
+### 4. Prompt Evolution
+Milo's most powerful feature: he rewrites his own prompts. By analyzing his top-performing comments, he evolves the LLM templates that generate his content. If a new prompt performs worse (>30% drop), he auto-reverts. Survival of the fittest — for prompts.
 
 ---
 
@@ -85,31 +193,26 @@ The bot generates two types of content in a configurable ratio:
 ### Installation
 
 ```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/MiloAgent.git
+git clone https://github.com/SoClosee/MiloAgent.git
 cd MiloAgent
 
-# Create virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
 
-# Install dependencies
 pip install -r requirements.txt
-
-# Install Playwright (for browser-based login)
 playwright install chromium
 ```
 
 ### Configuration
 
-1. **Add your LLM API key** — edit `config/llm.yaml`:
+1. **LLM key** — edit `config/llm.yaml`:
 ```yaml
 providers:
   groq:
     api_key: "gsk_your_key_here"    # Free at https://console.groq.com
 ```
 
-2. **Add your Reddit account** — edit `config/reddit_accounts.yaml`:
+2. **Reddit account** — edit `config/reddit_accounts.yaml`:
 ```yaml
 accounts:
   - username: "your_reddit_username"
@@ -118,67 +221,84 @@ accounts:
     assigned_projects: ["my_project"]
 ```
 
-3. **Create your project** — copy and edit `projects/example_project.yaml`:
+3. **Your project** — copy and customize:
 ```bash
 cp projects/example_project.yaml projects/my_project.yaml
-# Edit with your product details, target subreddits, keywords, etc.
+nano projects/my_project.yaml
 ```
 
-4. **Login to Reddit** (captures session cookies):
+4. **Login & verify**:
 ```bash
-python3 miloagent.py login reddit
+python3 miloagent.py login reddit    # Opens Chrome, captures cookies
+python3 miloagent.py setup           # Verify configuration
+python3 miloagent.py test all        # Test all connections
 ```
 
-5. **Verify everything works**:
-```bash
-python3 miloagent.py setup     # Check configuration
-python3 miloagent.py test all  # Test all connections
-```
-
-### Run
+### Launch Milo
 
 ```bash
-# Start the bot (foreground)
-python3 miloagent.py run
-
-# Start as daemon (background)
-python3 miloagent.py run --daemon
-
-# Stop the daemon
-python3 miloagent.py stop
+python3 miloagent.py run             # Foreground
+python3 miloagent.py run --daemon    # Background
+python3 miloagent.py stop            # Stop
 ```
+
+That's it. Milo takes over from here.
 
 ---
 
 ## Docker Deployment
 
 ```bash
-# Copy and edit environment variables
 cp .env.example .env
 nano .env
 
-# Build and start
 docker compose up -d
-
-# View logs
 docker compose logs -f
 ```
 
 ### Server Deployment (VPS)
 
 ```bash
-# First-time setup (Nginx + SSL + .env)
-./deploy.sh --setup
-
-# Deploy
-./deploy.sh --up
-
-# Update
-./deploy.sh --update
-
-# Status
-./deploy.sh --status
+./deploy.sh --setup    # First-time: Nginx + SSL + .env
+./deploy.sh --up       # Build & start
+./deploy.sh --update   # Pull + rebuild + restart
+./deploy.sh --status   # Health check
 ```
+
+---
+
+## Monitor Milo — 3 Dashboards
+
+### Web Dashboard
+```bash
+python3 miloagent.py run --web    # Opens on port 8420
+```
+Full browser UI with real-time stats, action logs, account health, and project management.
+
+### Terminal Dashboard (TUI)
+```bash
+python3 miloagent.py dashboard
+```
+| Key | Action |
+|-----|--------|
+| `TAB` / `1-4` | Switch views (Main / Accounts / Convos / Opportunities) |
+| `s` Scan / `a` Act / `l` Learn / `e` Engage |
+| `p` Pause/Resume / `q` Quit |
+| `:` Command mode (vim-style) |
+
+### Telegram Dashboard
+Control Milo from your phone:
+
+| Command | Description |
+|---------|-------------|
+| `/status` | Milo's state, RAM, recent actions |
+| `/stats` | 24h performance stats |
+| `/report` | Full daily report |
+| `/insights` | What Milo has learned |
+| `/intel` | Subreddit opportunity map |
+| `/scan` / `/post` | Trigger actions manually |
+| `/pause` / `/resume` | Pause/resume Milo |
+| `/performance` | Performance score + suggestions |
 
 ---
 
@@ -186,97 +306,78 @@ docker compose logs -f
 
 | Command | Description |
 |---------|-------------|
-| `setup` | Verify configuration |
-| `run` | Start the bot (`--daemon` for background) |
+| `run [--daemon]` | Start Milo |
 | `stop` | Stop the daemon |
-| `dashboard` | Launch Terminal UI (TUI) |
-| `scan reddit` | Scan Reddit for opportunities |
-| `post reddit -p my_project` | Post a comment |
-| `post reddit -p my_project --dry-run` | Generate without posting |
-| `engage all` | Organic engagement (upvote, subscribe, follow) |
-| `login reddit` | Login via browser |
-| `login twitter` | Login via browser |
-| `paste-cookies reddit` | Paste cookies manually |
-| `test all` | Test all connections |
-| `status` | Quick status overview |
-| `stats -h 24` | Detailed stats (last 24h) |
-| `accounts` | Account health status |
-| `learn` | Run learning cycle |
-| `insights` | View learned patterns |
-| `business list` | List projects |
-| `business add` | Add a new project |
-| `business show <name>` | Show project config |
-| `hub list` | List owned subreddits |
-| `hub suggest -p <project>` | Get subreddit name suggestions |
-| `hub create <name>` | Create a new subreddit |
-| `system health` | System health check |
-| `system cleanup` | Clean database & temp files |
+| `dashboard` | Terminal UI |
+| `scan reddit` | Scan for opportunities |
+| `post reddit -p <project> [--dry-run]` | Post a comment |
+| `engage all` | Organic engagement (upvote, subscribe) |
+| `login reddit\|twitter` | Browser login |
+| `test all` | Test connections |
+| `status` / `stats -h 24` | Monitoring |
+| `accounts` | Account health |
+| `learn` / `insights` | Learning system |
+| `business list\|add\|show` | Project management |
+| `hub list\|suggest\|create` | Subreddit management |
+| `system health\|cleanup` | System maintenance |
 
 ---
 
-## Telegram Dashboard
+## Safety — How Milo Stays Under the Radar
 
-Control and monitor MiloAgent from Telegram:
-
-| Command | Description |
-|---------|-------------|
-| `/status` | Bot state, RAM, recent actions |
-| `/stats` | Last 24h statistics |
-| `/report` | Full daily report |
-| `/last 10` | Last 10 actions with content |
-| `/insights` | Learned patterns & A/B results |
-| `/intel` | Subreddit opportunity analysis |
-| `/accounts` | Account health |
-| `/scan` | Trigger a scan now |
-| `/post` | Post now |
-| `/pause` / `/resume` | Pause/resume the bot |
-| `/performance` | Performance score & suggestions |
+| Protection | How it works |
+|-----------|-------------|
+| **Rate Limiting** | Per-account + per-subreddit + per-hour limits, configurable |
+| **Human Timing** | Random delays between 1-5s, jitter on all actions, no patterns |
+| **Shadowban Detection** | Checks profile visibility + comment status periodically |
+| **Circuit Breaker** | 5 consecutive failures → auto-pause, resume next cycle |
+| **User-Agent Rotation** | Pool of 5 realistic browser signatures |
+| **Content Validation** | Pre-post check for spam patterns, excessive links, duplicates |
+| **Weekend Mode** | 50% activity reduction (Reddit is quieter on weekends) |
+| **Resource Guard** | Auto-pause if RAM > 90% or CPU > 80% — never crashes your machine |
 
 ---
 
-## Terminal Dashboard (TUI)
+## Zero-Cost Architecture
 
-```bash
-python3 miloagent.py dashboard
-```
+Milo runs entirely on free tiers:
 
-| Key | Action |
-|-----|--------|
-| `TAB` / `1-4` | Switch views (Main / Accounts / Conversations / Opportunities) |
-| `s` | Scan | `a` | Act | `l` | Learn |
-| `p` | Pause/Resume | `q` | Quit |
-| `:` | Command mode (vim-style) |
+| Component | Provider | Limit |
+|-----------|----------|-------|
+| **LLM (Primary)** | Groq — Llama 3.3 70B | 6,000 req/day |
+| **LLM (Fallback)** | Google Gemini 2.0 Flash | 1,500 req/day |
+| **LLM (Local)** | Ollama (any model) | Unlimited |
+| **Reddit** | Web scraping + cookies | No API key needed |
+| **Twitter** | Twikit + cookies | No API key needed |
+| **Database** | SQLite | Local, zero cost |
+| **Dashboard** | FastAPI | Self-hosted |
+
+**Daily usage:** ~90 LLM calls/day — well within free limits.
 
 ---
 
-## Architecture
+## What Milo Does Automatically
 
-```
-miloagent.py (CLI)
-    │
-    ▼
-Orchestrator (scheduler + job runner)
-    │
-    ├── ResourceMonitor     → CPU/RAM/Disk monitoring, auto-pause
-    ├── BusinessManager     → Load projects, hot-reload
-    ├── LearningEngine      → Self-improvement, A/B testing
-    ├── ResearchEngine      → Trend analysis, news tracking
-    │
-    ├── Reddit (Web/API)    → Scan, comment, post, DM, verify
-    ├── Twitter/X           → Scan, reply, tweet, DM
-    ├── Telegram            → Group engagement, auto-discovery
-    │
-    ├── Safety Layer
-    │   ├── RateLimiter     → Per-account, per-subreddit limits
-    │   ├── BanDetector     → Shadowban detection
-    │   ├── ContentDedup    → Prevent duplicate posts
-    │   └── AccountManager  → Rotation, cooldowns, health
-    │
-    └── Dashboards
-        ├── Web (FastAPI)   → Browser dashboard
-        ├── TUI (Rich)      → Terminal dashboard
-        └── Telegram Bot    → Mobile monitoring
-```
+When you run `python3 miloagent.py run`, Milo handles everything:
+
+| Job | Frequency | Description |
+|-----|-----------|-------------|
+| **Scan** | 8 min | Find relevant posts across Reddit (+ Twitter/Telegram) |
+| **Act** | 1-2 min | Post on the best scored opportunity |
+| **Engage** | 2h | Organic upvotes, follows, subscribes |
+| **Verify** | 1h | Check if posted comments survived moderation |
+| **Seed Content** | 6h | Create original posts in target communities |
+| **Tweet Cycle** | 45 min | Twitter engagement loop |
+| **Learn** | 6h | Analyze results, adjust all weights |
+| **Auto-Improve** | 12h | Self-optimize prompts, rate limits, strategy |
+| **Health Check** | 30 min | Detect shadowbans, verify account health |
+| **Research** | 4h | Track trends, news, context for better content |
+| **Curate** | 3h | Find and share relevant third-party content |
+| **Build Relations** | 3h | DM outreach, relationship nurturing |
+| **Community** | 2h | Maintain subreddit presence & reputation |
+| **Subreddit Intel** | 8h | Deep analysis of subreddit opportunities |
+| **Hub Animation** | 6h | Manage and animate owned subreddits |
+| **Daily Report** | 24h | Full Telegram summary of the day |
 
 ---
 
@@ -284,168 +385,76 @@ Orchestrator (scheduler + job runner)
 
 ```
 MiloAgent/
-├── miloagent.py              # CLI entry point
-├── requirements.txt          # Python dependencies
-├── Dockerfile                # Container image
-├── docker-compose.yml        # Container orchestration
-├── deploy.sh                 # Server deployment script
-├── miloagent.service         # Systemd service file
+├── miloagent.py              # CLI — talk to Milo
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
+├── deploy.sh                 # VPS deployment
+├── miloagent.service         # Systemd
 │
-├── config/                   # Configuration (edit these!)
-│   ├── settings.yaml         # Bot behavior & limits
-│   ├── llm.yaml              # LLM provider API keys
+├── config/                   # Milo's configuration
+│   ├── settings.yaml         # Behavior, limits, features
+│   ├── llm.yaml              # LLM provider keys
 │   ├── reddit_accounts.yaml  # Reddit credentials
 │   ├── twitter_accounts.yaml # Twitter credentials
 │   ├── telegram.yaml         # Telegram bot token
-│   ├── telegram_user_accounts.yaml
-│   └── expert_personas.yaml  # AI persona definitions
+│   └── expert_personas.yaml  # Milo's personality library
 │
-├── core/                     # Brain
-│   ├── orchestrator.py       # Main loop & scheduler
+├── core/                     # Milo's brain
+│   ├── orchestrator.py       # Main loop & job scheduler
 │   ├── content_gen.py        # LLM content generation
-│   ├── content_validator.py  # Pre-post validation
-│   ├── learning_engine.py    # Self-improvement & A/B testing
+│   ├── learning_engine.py    # Self-improvement engine
 │   ├── strategy.py           # Opportunity scoring
-│   ├── research_engine.py    # Trend & news tracking
-│   ├── business_manager.py   # Project management
-│   ├── database.py           # SQLite data layer
-│   ├── resource_monitor.py   # System resource monitoring
-│   ├── cookie_manager.py     # Browser login & cookies
+│   ├── ab_testing.py         # A/B experiment framework
+│   ├── research_engine.py    # Trend tracking
 │   ├── subreddit_intel.py    # Subreddit analysis
-│   ├── subreddit_hub.py      # Owned subreddit management
-│   ├── community_manager.py  # Community moderation
-│   ├── content_curator.py    # Content curation
-│   ├── relationship_engine.py# Relationship building
-│   └── ab_testing.py         # A/B experiment framework
+│   ├── subreddit_hub.py      # Owned subreddit lifecycle
+│   └── ...                   # 14 modules total
 │
-├── platforms/                # Social media integrations
-│   ├── base_platform.py      # Abstract interface
-│   ├── reddit_web.py         # Reddit (cookie-based)
-│   ├── reddit_bot.py         # Reddit (PRAW API)
-│   ├── twitter_bot.py        # Twitter/X (Twikit)
-│   └── telegram_group_bot.py # Telegram groups (Telethon)
+├── platforms/                # Where Milo operates
+│   ├── reddit_web.py         # Reddit (expert)
+│   ├── reddit_bot.py         # Reddit API mode
+│   ├── twitter_bot.py        # Twitter/X (learning)
+│   └── telegram_group_bot.py # Telegram (learning)
 │
-├── safety/                   # Anti-ban protection
-│   ├── rate_limiter.py       # Action limits & timing
-│   ├── ban_detector.py       # Shadowban detection
-│   ├── content_dedup.py      # Duplicate prevention
-│   └── account_manager.py    # Account rotation & health
+├── safety/                   # Keeps Milo safe
+│   ├── rate_limiter.py
+│   ├── ban_detector.py
+│   ├── content_dedup.py
+│   └── account_manager.py
 │
-├── dashboard/                # Monitoring interfaces
-│   ├── web.py                # FastAPI web dashboard
-│   ├── tui.py                # Rich terminal UI
-│   └── telegram_bot.py       # Telegram bot dashboard
+├── dashboard/                # Monitor Milo
+│   ├── web.py                # Browser dashboard
+│   ├── tui.py                # Terminal dashboard
+│   └── telegram_bot.py       # Telegram dashboard
 │
-├── prompts/                  # LLM prompt templates
-│   ├── reddit_comment.txt
-│   ├── reddit_post.txt
-│   ├── twitter_reply.txt
-│   ├── twitter_tweet.txt
-│   ├── telegram_reply.txt
-│   └── ... (18 templates)
-│
-├── projects/                 # Your products/projects (YAML)
-│   └── example_project.yaml  # Template — copy and customize
-│
-├── data/                     # Runtime data (gitignored)
-│   ├── miloagent.db          # SQLite database
-│   ├── cookies/              # Session cookies
-│   └── sessions/             # Telegram sessions
-│
-└── logs/                     # Log files (gitignored)
+├── prompts/                  # 18 LLM prompt templates
+├── projects/                 # Your products (YAML)
+└── data/                     # Runtime (gitignored)
 ```
-
----
-
-## Self-Learning System
-
-MiloAgent continuously improves through 4 learning mechanisms:
-
-### 1. Subreddit & Keyword Weighting
-Tracks engagement per subreddit and keyword, automatically prioritizing high-performing targets.
-
-### 2. Reply Sentiment Analysis
-Analyzes responses to bot comments (positive: "thanks", "helpful" / negative: "spam", "bot") to adjust tone per subreddit. Zero LLM calls — pure keyword analysis.
-
-### 3. A/B Testing
-Automatically tests 4 variables (max 2 experiments simultaneously):
-- **Tone** — which communication style gets the best engagement
-- **Post type** — which content format performs best
-- **Length** — short vs long responses
-- **Promo ratio** — optimal promotional content percentage
-
-### 4. Prompt Evolution
-Evolves LLM prompt templates by analyzing top-performing posts. Auto-reverts if performance drops >30%.
-
----
-
-## Anti-Ban Safety
-
-| Protection | Details |
-|-----------|---------|
-| Rate Limiting | Per-account, per-subreddit, per-hour limits |
-| Human Timing | Random delays, jitter on all actions |
-| Shadowban Detection | Periodic profile & comment visibility checks |
-| Circuit Breaker | 5 consecutive failures → pause requests |
-| User-Agent Rotation | Pool of 5 browser user-agents |
-| Resource Monitoring | Auto-pause if RAM > 90% or CPU > 80% |
-| Content Validation | Checks for spam patterns before posting |
-| Weekend Mode | 50% activity reduction on weekends |
-
----
-
-## Zero-Cost Stack
-
-| Component | Provider | Free Tier |
-|-----------|----------|-----------|
-| LLM (Primary) | Groq | 6,000 req/day |
-| LLM (Fallback) | Gemini | 1,500 req/day |
-| LLM (Local) | Ollama | Unlimited |
-| Reddit | Web scraping | No API needed |
-| Twitter | Twikit | Cookie-based |
-| Database | SQLite | Local |
-| Dashboard | FastAPI | Self-hosted |
-
-**Estimated daily usage:** ~90 LLM calls/day (well within free tier)
-
----
-
-## Automated Jobs
-
-When running in `run` mode, these jobs execute automatically:
-
-| Job | Frequency | Description |
-|-----|-----------|-------------|
-| Scan | 8 min | Find relevant posts across platforms |
-| Act | 1-2 min | Post on the best opportunity |
-| Engage | 2h | Organic engagement (upvotes, follows) |
-| Verify | 1h | Check if comments were removed |
-| Seed Content | 6h | Create original posts in target subs |
-| Tweet Cycle | 45 min | Twitter engagement loop |
-| Learn | 6h | Analyze performance, adjust weights |
-| Auto-Improve | 12h | Self-optimize rate limits & prompts |
-| Health Check | 30 min | Verify account health |
-| Research | 4h | Track trends and news |
-| Curate | 3h | Find and share relevant content |
-| Build Relations | 3h | DM outreach & relationship building |
-| Community | 2h | Maintain subreddit presence |
-| Subreddit Intel | 8h | Deep subreddit analysis |
-| Hub Animation | 6h | Animate owned subreddits |
-| Daily Report | 24h | Telegram summary |
 
 ---
 
 ## Contributing
 
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Milo is open source. Contributions are welcome!
+
+Some ideas:
+- New platform integrations (LinkedIn, Discord, ...)
+- New expert personas
+- Better prompt templates
+- Dashboard improvements
+- Safety enhancements
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
+MIT License — see [LICENSE](LICENSE).
 
 ---
 
 <p align="center">
-  <strong>Built with Python, LLMs & patience</strong><br>
-  <em>If you find this useful, give it a star!</em>
+  <strong>Milo never sleeps. He scans, he learns, he grows your product.</strong><br>
+  <em>Star this repo if you want to see where he goes next.</em>
 </p>
