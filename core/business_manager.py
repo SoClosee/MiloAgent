@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Callable
 
 import yaml
+from yaml.loader import SafeLoader
 
 logger = logging.getLogger(__name__)
 
@@ -50,8 +51,8 @@ class BusinessManager:
         for f in self.projects_dir.glob("*.yaml"):
             try:
                 new_mtimes[str(f)] = f.stat().st_mtime
-                with open(f) as fh:
-                    data = yaml.safe_load(fh) or {}
+                with open(f, 'r') as fh:
+                    data = yaml.load(fh, Loader=SafeLoader) or {}
                 if data and data.get("project", {}).get("enabled", True):
                     projects.append(data)
             except Exception as e:
@@ -197,7 +198,7 @@ class BusinessManager:
             },
         }
 
-        with open(filepath, "w") as f:
+        with open(filepath, 'w') as f:
             yaml.dump(data, f, default_flow_style=False, sort_keys=False)
 
         self.reload()
@@ -207,8 +208,8 @@ class BusinessManager:
         """Delete a project by name. Returns True if found and deleted."""
         for f in self.projects_dir.glob("*.yaml"):
             try:
-                with open(f) as fh:
-                    data = yaml.safe_load(fh) or {}
+                with open(f, 'r') as fh:
+                    data = yaml.load(fh, Loader=SafeLoader) or {}
                 if data.get("project", {}).get("name", "").lower() == name.lower():
                     f.unlink()
                     self.reload()
@@ -232,8 +233,8 @@ class BusinessManager:
         """Get the YAML file path for a project."""
         for f in self.projects_dir.glob("*.yaml"):
             try:
-                with open(f) as fh:
-                    data = yaml.safe_load(fh) or {}
+                with open(f, 'r') as fh:
+                    data = yaml.load(fh, Loader=SafeLoader) or {}
                 if data.get("project", {}).get("name", "").lower() == name.lower():
                     return str(f)
             except Exception:
