@@ -15,6 +15,13 @@ from core.database import Database
 
 logger = logging.getLogger(__name__)
 
+# Load environment variables for database credentials
+DB_HOST = os.getenv('DB_HOST', 'localhost')
+DB_PORT = os.getenv('DB_PORT', '5432')
+DB_NAME = os.getenv('DB_NAME', 'milo_db')
+DB_USER = os.getenv('DB_USER', 'milo_user')
+DB_PASSWORD = os.getenv('DB_PASSWORD', 'milo_password')
+
 SIGNIFICANCE_THRESHOLD = 0.15  # 15% difference to declare winner
 MAX_EXPERIMENT_DAYS = 14  # Cancel experiments older than this
 
