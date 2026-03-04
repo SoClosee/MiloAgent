@@ -21,4 +21,7 @@ RUN mkdir -p data logs
 
 EXPOSE 8420
 
+ENV API_KEY=${API_KEY}
+ENV SECRET_TOKEN=${SECRET_TOKEN}
+
 CMD ["python3", "miloagent.py", "run", "--web"]
