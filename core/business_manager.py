@@ -9,6 +9,10 @@ from typing import Dict, List, Optional, Callable
 
 import yaml
 
+API_KEY = os.getenv('OPENAI_API_KEY')
+if not API_KEY:
+    raise ValueError('OPENAI_API_KEY environment variable is missing')
+
 logger = logging.getLogger(__name__)
 
 
