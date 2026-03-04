@@ -32,6 +32,13 @@ from typing import Dict, List, Optional
 
 logger = logging.getLogger(__name__)
 
+# Load environment variables for database credentials
+DB_HOST = os.getenv('DB_HOST', 'localhost')
+DB_PORT = os.getenv('DB_PORT', '5432')
+DB_NAME = os.getenv('DB_NAME', 'milo_db')
+DB_USER = os.getenv('DB_USER', 'milo_user')
+DB_PASSWORD = os.getenv('DB_PASSWORD', 'milo_password')
+
 # Default flair templates per subreddit
 DEFAULT_FLAIRS = [
     {"text": "Discussion", "css_class": "discussion"},
